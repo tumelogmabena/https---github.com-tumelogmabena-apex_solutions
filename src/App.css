@@ -1,38 +1,250 @@
-.App {
+
+
+
+.button{
+  height: 10cm;
+  background-color: yellow;
+}
+
+
+
+.Side_Bar{
+  background-color: #153D77;
+  height: 43.43rem;
+  width: 6cm;
+  padding-right: 2%;
+  margin-right: 80%;
+  
+
+}
+.Info{
+  
+  height: 2rem;
   text-align: center;
+  padding-top: 2rem;
+  
+}
+.menu{
+  list-style-type: none;
+ 
+}
+.menu li {
+  height: 0.8cm;
+  background-color: yellow;
+  border-radius: 2cm;
+  text-align: center;
+  align-self: center;
+  margin-top: 2%;
+
+}
+.menu li a{
+ text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.spread{
+height: 5cm;
+width :83.29%;
+background-color:white;
+display: flex;
+margin-left: 16.7%;
+margin-top: -18.38cm;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  height: 3rem;
+  width: 5cm;
+  background-color: #153D77;
+  display: inline-block;
+  margin-left: 20%;
+  border-color: #153D77;
+  box-shadow: none ;
+  border-radius: 2cm;
+  margin-top: 0.5cm;
+  margin-left: 1%;
+  z-index: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#clock{
+  background-color: #153D77;
+  margin-left: 15cm;
+  z-index: 1;
+  margin-top: 3cm;
+}
+
+button,text{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*--------------------------------------------------------------------*/
+.service_req{
+  display: flex;
+  width: 5cm;
+  margin-left: 25%;
+  margin-top: -15cm;
+  z-index: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.View_serv{
+  display: flex;
+  width: 5cm;
+  margin-left: 65%;
+  margin-top: -14.9cm;
+}
+#request_btn{
+  margin-top: 2%;
+  z-index: 1;
+  margin-left: 32%;
+}
+#view_btn{
+  margin-top: 4.2%;
+  z-index: 1;
+  margin-left: 75%;
+}
+
+#welcome{
+  display: flex;
+  margin-left: 7cm;
+  margin-bottom: -0cm;
+  background-color: red;
+  font-size: 1.2em;
+}
+/*==========================================================================================
+*/
+
+h2 {
+    color: #333; /* Dark grey header */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Medium grey for label text */
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* White background for inputs */
+    color: #333; /* Dark grey text */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#submit_btn{
+  margin-left: 30%;
+ 
+}
+
+button:hover {
+    background-color: yellow; /* Darker grey on hover */
+    text-decoration: black; 
+}
+
+.questionnaire{
+  background-color:white;
+  margin-left: 23%;
+  margin-top: -44.6%;
+  border-radius: 2cm;
+  width: 25cm;
+  height: 17.4cm;
+  align-items: center;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+  box-shadow: #555 2px 5px 7px 0px ;
+
+}
+/*===============================================================================================*/
+
+#welcome_btn{
+  background-color: #3B7DDD;
+  border-radius: 0.5cm;
+  height: 2cm;
+  width: 7cm;
+  margin-top:1cm;
+  margin-left: 16cm;
+  font-size: 25px ;
+}
+.welcome{
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 6cm;
+  
+  align-items: center;
+ 
+  justify-content: center;
+}
+
+/*===============================================================================================================*/
+.login-container {
+  margin-left: 15.5cm;
+  margin-top: 5cm;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: #357ab8;
 }
