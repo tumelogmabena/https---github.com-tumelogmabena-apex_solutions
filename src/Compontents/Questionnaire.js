@@ -4,10 +4,16 @@ function Questionnaire() {
   // State for form inputs
   const [formData, setFormData] = useState({
     name: '',
-    age: '',
-    gender: '',
-    interests: [],
-    feedback: ''
+    type: '',
+    condition:'',
+    power:'',
+    screen:'',
+    mic:'',
+    water:'',
+    cam:'',
+    sensor:'',
+    model:'',
+    description: ''
   });
 
   // Handle input changes for text, radio, and textarea
@@ -56,94 +62,162 @@ function Questionnaire() {
           </label>
         </div>
         
-        {/* Number Input */}
-        <div>
-          <label>
-            Age:
-            <input
-              type="number"
-              name="age"
-              value={formData.age}
-              onChange={handleChange}
-              required
-            />
-          </label>
-        </div>
+        
         
         {/* Radio Buttons */}
         <div>
-          <label>Gender:</label>
+          <label>Please select your phone model:</label>
           <label>
-            <input
-              type="radio"
-              name="gender"
-              value="Male"
-              checked={formData.gender === 'Male'}
-              onChange={handleChange}
-            />
-            Male
+            <input type="radio" name="model" value="iPhone" checked={formData.model === 'iPhone'}onChange={handleChange}/>
+            iPhone
           </label>
           <label>
-            <input
-              type="radio"
-              name="gender"
-              value="Female"
-              checked={formData.gender === 'Female'}
-              onChange={handleChange}
-            />
-            Female
+            <input type="radio" name="model" value="Samsung" checked={formData.model === 'Samsung'}onChange={handleChange}/>
+            Samsung
           </label>
           <label>
-            <input
-              type="radio"
-              name="gender"
-              value="Other"
-              checked={formData.gender === 'Other'}
-              onChange={handleChange}
-            />
-            Other
+            <input type="radio" name="model" value="Other" checked={formData.model === 'Other'}onChange={handleChange}/>
+           Other
           </label>
         </div>
-        
-        {/* Checkboxes */}
+
+        <hr/>
+
         <div>
-          <label>Interests:</label>
+          <label>Problem Type:</label>
           <label>
-            <input
-              type="checkbox"
-              value="Sports"
-              checked={formData.interests.includes('Sports')}
-              onChange={handleCheckboxChange}
-            />
-            Sports
+            <input type="radio" name="type" value="Hardware" checked={formData.type === 'Hardware'}onChange={handleChange}/>
+            Hardware
           </label>
           <label>
-            <input
-              type="checkbox"
-              value="Music"
-              checked={formData.interests.includes('Music')}
-              onChange={handleCheckboxChange}
-            />
-            Music
+            <input type="radio" name="type" value="Software" checked={formData.type === 'Software'}onChange={handleChange}/>
+            Software
           </label>
           <label>
-            <input
-              type="checkbox"
-              value="Reading"
-              checked={formData.interests.includes('Reading')}
-              onChange={handleCheckboxChange}
-            />
-            Reading
+            <input type="radio" name="type" value="Both" checked={formData.type === 'Both'}onChange={handleChange}/>
+           Both
           </label>
         </div>
+
+        <hr/>
+
+        <div>
+          <label>Condition:</label>
+          <label>
+            <input type="radio" name="condition" value="Excellent" checked={formData.condition === 'Excellent'}onChange={handleChange}/>
+            Excellent
+          </label>
+          <label>
+            <input type="radio" name="condition" value="Fair" checked={formData.condition === 'Fair'}onChange={handleChange}/>
+            Fair
+          </label>
+          <label>
+            <input type="radio" name="condition" value="Poor" checked={formData.condition === 'Poor'}onChange={handleChange}/>
+            Poor
+          </label>
+        </div>
+
+        <hr/>
+
+        <div>
+          <label>Does your device Switch On</label>
+          <label>
+            <input type="radio" name="power" value="Yes" checked={formData.power === 'Yes'}onChange={handleChange}/>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="power" value="No" checked={formData.power === 'No'}onChange={handleChange}/>
+            No
+          </label>
+        
+        </div>
+
+        <hr/>
+
+        <div>
+          <label>Is your screen damaged?</label>
+          <label>
+            <input type="radio" name="screen" value="Yes" checked={formData.screen === 'Yes'}onChange={handleChange}/>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="screen" value="No" checked={formData.screen === 'No'}onChange={handleChange}/>
+            No
+          </label>
+          
+        </div>
+
+        <hr/>
+
+        
+        <div>
+          <label>Does your device Mic work</label>
+          <label>
+            <input type="radio" name="mic" value="Yes" checked={formData.mic === 'Yes'}onChange={handleChange}/>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="mic" value="No" checked={formData.mic === 'No'}onChange={handleChange}/>
+            No
+          </label>
+        
+        </div>
+
+        <hr/>
+
+        <div>
+          <label>Has your device fallen inside water</label>
+          <label>
+            <input type="radio" name="water" value="Yes" checked={formData.water === 'Yes'}onChange={handleChange}/>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="water" value="No" checked={formData.water === 'No'}onChange={handleChange}/>
+            No
+          </label>
+        
+        </div>
+
+        <hr/>
+
+        <div>
+          <label>Does your camera work?</label>
+          <label>
+            <input type="radio" name="cam" value="Yes" checked={formData.cam === 'Yes'}onChange={handleChange}/>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="cam" value="No" checked={formData.cam === 'No'}onChange={handleChange}/>
+            No
+          </label>
+        
+        </div>
+
+        <hr/>
+
+        <div>
+          <label>Do your sensors work</label>
+          <label>
+            <input type="radio" name="sensor" value="Yes" checked={formData.sensor === 'Yes'}onChange={handleChange}/>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="sensor" value="No" checked={formData.sensor === 'No'}onChange={handleChange}/>
+            No
+          </label>
+        
+        </div>
+
+        <hr/>
+        
         
         {/* Textarea */}
         <div>
           <label>
-            Feedback:
+            Please give us more information with the problem of your diviice
             <textarea
-              name="feedback"
-              value={formData.feedback}
+              name="description"
+              value={formData.description}
               onChange={handleChange}
             />
           </label>

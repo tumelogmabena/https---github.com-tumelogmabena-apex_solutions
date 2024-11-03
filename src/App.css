@@ -165,14 +165,14 @@ button:hover {
   margin-top: -44.6%;
   border-radius: 2cm;
   width: 25cm;
-  height: 17.4cm;
+  max-height: 15.4cm;
   align-items: center;
   padding-left: 2cm;
   padding-right: 2cm;
   padding-top: 0.5rem;
   padding-bottom: 0.7rem;
   box-shadow: #555 2px 5px 7px 0px ;
-
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 /*===============================================================================================*/
 
