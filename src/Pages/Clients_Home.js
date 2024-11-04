@@ -8,8 +8,14 @@ function Clients_Home() {
   const navigate = useNavigate();
 
   const goToReportsPage = () => {
-    navigate('/'); 
+    navigate('/report'); 
   };
+
+  const goToHistoryPage = () => {
+    navigate('/history'); 
+  };
+
+
   return (
     
     <div class="clients_div">
@@ -23,7 +29,7 @@ function Clients_Home() {
     
         </div>
 
-        <button id="request_btn" onClick={goToReportsPage}>Request</button>
+        
 
         <p id="view">View Service History</p>
         <div  class="View_serv">
@@ -32,7 +38,8 @@ function Clients_Home() {
        
         </div>
 
-        <button id="view_btn" onClick={goToReportsPage} >View</button>
+        <button id="view_btn" onClick={goToHistoryPage} >View</button>
+        <button id="request_btn" onClick={goToReportsPage}>Request</button>
     </div>
   )
 }

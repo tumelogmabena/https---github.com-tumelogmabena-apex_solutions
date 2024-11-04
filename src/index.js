@@ -15,6 +15,9 @@ import Top_Bar from './Compontents/Top_Bar';
 import Clients_Home from './Pages/Clients_Home';
 import Reports from './Pages/Reports';
 import Login_Page from './Pages/Login_Page.js';
+import Info_Form from './Pages/Clients_Profile.js';
+import Edit_Info_Page from './Pages/Clients_Profile.js';
+import Service_History from './Pages/Service_History.js';
 
 
 
@@ -54,6 +57,23 @@ const router = createBrowserRouter([
     path: "login",
     element: <Login_Page/>,
   },
+
+  {
+    path: "profile",
+    element: <Info_Form/>,
+  },
+
+  {
+    path: "info",
+    element: <Edit_Info_Page/>,
+  },
+    
+  
+  {
+    path: "history",
+    element: <Service_History/>,
+  },
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -62,6 +82,9 @@ root.render(
     <RouterProvider router={router} />
   
 );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

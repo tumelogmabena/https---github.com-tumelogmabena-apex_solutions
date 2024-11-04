@@ -11,6 +11,7 @@ function App() {
       <button id="welcome_btn">Go To Home</button>
 
     </div>
+
   );
 }
 

@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 function Login_Page() {
   // State for username and password fields
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const navigate = useNavigate();
-  const goToClientsPage = () => {
-  navigate('clients');
-  };
+  
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     // Replace with actual authentication logic
     console.log('Username:', username);
     console.log('Password:', password);
-    alert(`Welcome, ${username}!`);
+    navigate('/clients')
+   
   };
    
 
@@ -50,7 +50,7 @@ function Login_Page() {
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="login-button" onClick={goToClientsPage}>Login</button>
+        <button type="submit" className="login-button" onClick={handleSubmit}>Login</button>
       </form>
     </div>
   );

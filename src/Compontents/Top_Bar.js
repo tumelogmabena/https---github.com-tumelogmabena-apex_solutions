@@ -1,6 +1,7 @@
-import React from 'react'
+
 import Side_Bar from './Side_Bar'
 import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 
 
 function Top_Bar() {
@@ -14,6 +15,14 @@ function Top_Bar() {
   const goBack = () => {
     navigate(-1); // Navigate to the previous page
   };
+
+  const [isActive, setIsActive] = useState(false);
+
+  // Toggle status and color
+  const handleStatusToggle = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     
     <div>
@@ -22,9 +31,13 @@ function Top_Bar() {
       
       <button onClick ={goToHomePage}>Home</button>
       <button onClick= {goBack}>Back</button>
-      <button id="clock" onClick>Clock In</button>
+
+
+      <div className="status-circle" style={{ backgroundColor: isActive ? 'green' : 'grey' }}></div>
+      <button id="clock" onClick={handleStatusToggle} className="status-button">Clock In</button>
       
 
+      
       </div>
 
     </div>

@@ -10,9 +10,9 @@ function Side_Bar() {
       </div>
 
       <ul class="menu">
-        <li><a href='/'>Home</a></li> 
-        <li><a href='blog'>Blogs Page</a></li> 
+        <li><a href='/clients'>Home</a></li> 
         <li><a href='current'>Current Jobs</a></li> 
+        <li><a href='info'>Edit Profile</a></li>
        
       </ul>
 
