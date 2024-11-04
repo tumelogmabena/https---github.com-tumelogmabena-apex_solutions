@@ -18,6 +18,7 @@ import Login_Page from './Pages/Login_Page.js';
 import Info_Form from './Pages/Clients_Profile.js';
 import Edit_Info_Page from './Pages/Clients_Profile.js';
 import Service_History from './Pages/Service_History.js';
+import Technicians_Home from './Pages/Technicians_Home.js';
 
 
 
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
     element: <Service_History/>,
   },
 
+  {
+    path: "technicians",
+    element: <Technicians_Home/>,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
