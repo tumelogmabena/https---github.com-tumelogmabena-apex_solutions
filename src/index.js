@@ -19,7 +19,11 @@ import Info_Form from './Pages/Clients_Profile.js';
 import Edit_Info_Page from './Pages/Clients_Profile.js';
 import Service_History from './Pages/Service_History.js';
 import Technicians_Home from './Pages/Technicians_Home.js';
-
+import Business_Home from './Pages/Business_Home.js';
+import Business_Clients from './Pages/Business_Clients.js';
+import Business_Technicians from './Pages/Business_Technicians.js';
+import Business_Contracts from './Pages/Business_Contracts.js';
+import Business_Analytics from './Pages/Business_Analytics.js';
 
 
 const router = createBrowserRouter([
@@ -78,6 +82,26 @@ const router = createBrowserRouter([
   {
     path: "technicians",
     element: <Technicians_Home/>,
+  },
+
+  {
+    path: "business",
+    element: <Business_Home/>,
+  },
+
+  {
+    path: "bclients",
+    element: <Business_Clients/>,
+  },
+
+  {
+    path: "btech",
+    element: <Business_Technicians/>,
+  },
+
+  {
+    path: "bcontracts",
+    element: <Business_Contracts/>,
   },
 ]);
 
