@@ -11,9 +11,9 @@ function Side_Bar_Business() {
 
       <ul class="menu">
         <li><a href='/clients'>Home</a></li> 
-        <li><a href='current'>Clients</a></li> 
-        <li><a href='info'>Technicians</a></li>
-        <li><a href='info'>Contracts</a></li>
+        <li><a href='bclients'>Clients</a></li> 
+        <li><a href='btech'>Technicians</a></li>
+        <li><a href='bcontracts'>Contracts</a></li>
         <li><a href='info'>Analytics</a></li>
        
       </ul>
