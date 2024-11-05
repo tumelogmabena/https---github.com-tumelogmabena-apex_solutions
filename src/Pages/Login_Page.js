@@ -21,12 +21,12 @@ function Login_Page() {
    
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="login_container">
+      <h2 id='loginh2'>Login</h2>
       <form onSubmit={handleSubmit}>
         
         {/* Username Input */}
-        <div className="form-group">
+        <div className="login_form">
           <label htmlFor="username">Username:</label>
           <input
             type="text"
@@ -38,7 +38,7 @@ function Login_Page() {
         </div>
 
         {/* Password Input */}
-        <div className="form-group">
+        <div className="login_form">
           <label htmlFor="password">Password:</label>
           <input
             type="password"
